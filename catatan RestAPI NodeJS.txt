@@ -1,3 +1,5 @@
 npm install --save sequelize
 
 npx sequelize-cli init
+
+npm install -g nodemon
