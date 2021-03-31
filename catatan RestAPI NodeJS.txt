@@ -1,0 +1,3 @@
+npm install --save sequelize
+
+npx sequelize-cli init
