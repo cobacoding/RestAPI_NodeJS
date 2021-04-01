@@ -1,5 +1,18 @@
 npm install --save sequelize
-
 npx sequelize-cli init
-
+npm install -g sequelize-cli
 npm install -g nodemon
+npm install --save mysql2
+
+--PEMBUATAN ORM
+sequelize model:generate --name Post --attributes title:string,content:text,imageUrl:string,categoryId:integer,userId:integer
+
+sequelize model:generate --name User --attributes name:string,email:string,password:string
+
+sequelize model:generate --name Category --attributes name:string
+
+sequelize model:generate --name Comment --attributes content:text,postId:integer,userId:integer
+
+sequelize db:migrate
+
+npm install --save body-parser
