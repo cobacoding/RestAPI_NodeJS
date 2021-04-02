@@ -16,3 +16,5 @@ sequelize model:generate --name Comment --attributes content:text,postId:integer
 sequelize db:migrate
 
 npm install --save body-parser
+
+npm i fastest-validator
