@@ -1,7 +1,7 @@
 npm install --save sequelize
 npx sequelize-cli init
 npm install -g sequelize-cli
-npm install -g nodemon
+npm install bcryptjs jsonwebtoken nodemon
 npm install --save mysql2
 
 --PEMBUATAN ORM
