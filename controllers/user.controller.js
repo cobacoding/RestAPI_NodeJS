@@ -49,7 +49,8 @@ function login(req, res) {
                     const token = jwt.sign({
                         email: user.email,
                         userId: user.id
-                    }, 'secret', function(err, token){
+                        //tadinya 'secret' diubah di ambil dari nodemon.json
+                    }, process.env.JWT_KEY, function(err, token){
                         res.status(200).json({
                             message: "Authentication successful!",
                             token: token
@@ -57,7 +58,7 @@ function login(req, res) {
                     });
                 }else{
                     res.status(401).json({
-                        message: "Invalid credentials!"
+                        message: "Invalid credentials TOKEN!"
                     });
                 }
             });

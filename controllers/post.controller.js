@@ -1,5 +1,6 @@
 const Validator = require('fastest-validator');
 const models = require('../models');
+const config = require('../config/config');
 // function index(req, res) {
 //     const posts = "Posts list";
 //     res.send(posts);
