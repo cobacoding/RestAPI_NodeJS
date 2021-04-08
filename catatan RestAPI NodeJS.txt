@@ -18,3 +18,7 @@ sequelize db:migrate
 npm install --save body-parser
 
 npm i fastest-validator
+
+npm install --save multer
+
+sequelize seed:generate --name category-seeder
