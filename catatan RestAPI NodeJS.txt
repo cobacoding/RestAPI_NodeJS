@@ -15,10 +15,20 @@ sequelize model:generate --name Comment --attributes content:text,postId:integer
 
 sequelize db:migrate
 
+sequelize seed:generate --name category-seeder
+
 npm install --save body-parser
 
 npm i fastest-validator
 
+//upload image
 npm install --save multer
 
-sequelize seed:generate --name category-seeder
+//eslint
+npm install eslint --save-dev
+//konfigurasi eslint (pakai https://standardjs.com/)
+npx eslint --init
+//edit package.json
+"lint": "eslint ./"
+
+https://medium.com/@gustialfianmp/membuat-rest-api-dengan-express-js-dan-sequelize-105c33db80c5
