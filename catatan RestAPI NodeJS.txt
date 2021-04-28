@@ -31,4 +31,6 @@ npx eslint --init
 //edit package.json
 "lint": "eslint ./"
 
+
+https://blog.logrocket.com/express-middleware-a-complete-guide/
 https://medium.com/@gustialfianmp/membuat-rest-api-dengan-express-js-dan-sequelize-105c33db80c5
